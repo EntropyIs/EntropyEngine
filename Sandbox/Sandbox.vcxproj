@@ -149,6 +149,9 @@
     <ProjectReference Include="..\EntropyCore\EntropyCore.vcxproj">
       <Project>{1afe98bf-e735-4a40-9eec-7e3b808dfc53}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\EntropyGraphics\EntropyGraphics.vcxproj">
+      <Project>{957fa344-a21e-4aa8-b602-4bc21be41af9}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
