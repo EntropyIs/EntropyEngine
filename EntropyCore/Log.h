@@ -1,6 +1,8 @@
 #pragma once
 #include "API.h"
 
+#include <iostream>
+
 namespace Entropy {
 	class ENTROPY_API log
 	{

@@ -1,6 +1,5 @@
 #include "Log.h"
 
-#include <iostream>
 #include <fstream>
 
 using namespace Entropy;
@@ -25,7 +24,7 @@ bool log::init(const bool _debug)
 	debug = _debug;
 
 	if (debug)
-		std::cout << "Logfile Generated: " << datetime() << std::endl;
+		std::cout << console_color::forground_cyan << "Logfile Generated" << console_color::reset << ": " << datetime() << std::endl;
 
 	return initalized;
 }
@@ -44,7 +43,7 @@ bool log::shutdown()
 		logger.close();
 
 		if (debug)
-			std::cout << "Logfile Closed: " << datetime() << std::endl;;
+			std::cout << console_color::forground_cyan << "Logfile Closed" << console_color::reset << ": " << datetime() << std::endl;;
 	}
 	return !initalized;
 }
@@ -62,7 +61,7 @@ void log::error(const char* _msg)
 		logger.close();
 		
 		if (debug)
-			std::cerr << datetime() << " Error: " << _msg << std::endl;
+			std::cerr << console_color::forground_red << datetime() << " Error" << console_color::reset << ": " << _msg << std::endl;
 	}
 }
 
@@ -79,7 +78,7 @@ void log::message(const char* _msg)
 		logger.close();
 
 		if (debug)
-			std::cout << datetime() << ": " << _msg << std::endl;
+			std::cout << console_color::forground_green << datetime() << console_color::reset << ": " << _msg << std::endl;
 	}
 }
 
