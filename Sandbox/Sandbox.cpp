@@ -2,5 +2,7 @@
 
 int main(int argc, char* argv)
 {
-	Log::Message("hello_world");
+	Entropy::log::init(true);
+	Entropy::log::message("hello_world");
+	Entropy::log::shutdown();
 }
