@@ -1,9 +1,18 @@
 #include <EntropyCore.h>
+#include <EntropyGraphics.h>
+
+#include <exception>
 
 int main(int argc, char* argv)
 {
 	Entropy::log::init(true);
-	Entropy::log::message("this is a message log");
-	Entropy::log::error("this is an error");
+
+	try {
+		Entropy::Window window("My GLWindow");
+	}
+	catch (std::exception& e) {
+		Entropy::log::error(e.what());
+	}
+
 	Entropy::log::shutdown();
 }
