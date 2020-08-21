@@ -8,7 +8,7 @@ workspace "EntropyEngine"
 		"Dist",
 	}
 
-outputDir = "%{cfg.architecture}\%{cfg.buildcfg}-%{cfg.system}"
+outputDir = "%{cfg.architecture}/%{cfg.buildcfg}-%{cfg.system}"
 
 project "EntropyCore"
 	location "EntropyCore"
