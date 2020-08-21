@@ -58,7 +58,7 @@ project "EntropyGraphics"
 	language "C++"
 
 	targetdir("bin/" .. outputDir .. "/%{prj.name}")
-	objdir("bin-int/" .. outputDir .. "/%{prj.name}")
+	objdir("obj/" .. outputDir .. "/%{prj.name}")
 
 	files
 	{
