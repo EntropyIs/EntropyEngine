@@ -1,3 +1,6 @@
 #pragma once
 
-#include "log.h"
+#include "Entropy/Application.h"
+#include "Entropy/log.h"
+
+#include "Entropy/EntryPoint.h"
