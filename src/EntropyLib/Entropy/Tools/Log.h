@@ -4,7 +4,7 @@
 #include <iostream>
 
 namespace Entropy {
-	class ENTROPY_CORE_API log
+	class ENTROPY_API log
 	{
 	public:
 		static bool init(const bool debug = false);

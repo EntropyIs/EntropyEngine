@@ -3,7 +3,7 @@
 
 namespace Entropy
 {
-	class ENTROPY_CORE_API Application
+	class ENTROPY_API Application
 	{
 	public:
 		Application();
