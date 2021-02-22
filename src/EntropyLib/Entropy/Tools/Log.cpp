@@ -48,7 +48,7 @@ bool log::shutdown()
 	return !initalized;
 }
 
-void log::error(const char* _msg)
+void log::header(const char* _msg)
 {
 	if (initalized)
 	{
@@ -56,12 +56,12 @@ void log::error(const char* _msg)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << " Error: " << _msg << std::endl;
+			logger << "#" << datetime() << ": " << _msg << "#" << std::endl;
 		}
 		logger.close();
-		
+
 		if (debug)
-			std::cerr << console_color::forground_red << datetime() << " Error" << console_color::reset << ": " << _msg << std::endl;
+			std::cout << console_color::forground_bold_green << datetime() << console_color::reset << ": " << _msg << std::endl;
 	}
 }
 
@@ -79,6 +79,23 @@ void log::message(const char* _msg)
 
 		if (debug)
 			std::cout << console_color::forground_green << datetime() << console_color::reset << ": " << _msg << std::endl;
+	}
+}
+
+void log::error(const char* _msg)
+{
+	if (initalized)
+	{
+		std::ofstream logger;
+		logger.open(file_path, std::ofstream::app);
+		if (logger.is_open())
+		{
+			logger << datetime() << " Error: " << _msg << std::endl;
+		}
+		logger.close();
+		
+		if (debug)
+			std::cerr << console_color::forground_red << datetime() << " Error" << console_color::reset << ": " << _msg << std::endl;
 	}
 }
 

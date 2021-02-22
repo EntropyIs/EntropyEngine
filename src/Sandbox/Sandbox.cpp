@@ -9,13 +9,23 @@ public:
 	~Sandbox() {};
 
 	// Inherited via Application
-	virtual void Run() override
+	virtual void Init(bool _debug) override
 	{
-		Entropy::log::init(true);
-		Entropy::log::message("Entropy Engine");
-		Entropy::log::shutdown();
+		Entropy::log::init(_debug);
+		Entropy::log::header("Entropy Engine: Sandbox Initalization.");
 	}
 
+	virtual void Run() override
+	{
+		Entropy::log::header("Entropy Engine: Sandbox Run.");
+	}
+	
+	virtual void Shutdown() override
+	{
+		Entropy::log::header("Entropy Engine: Sandbox Shutdown.");
+		Entropy::log::shutdown();
+	}
+	
 };
 
 Entropy::Application* Entropy::CreateApplication()

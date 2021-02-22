@@ -10,8 +10,9 @@ namespace Entropy {
 		static bool init(const bool debug = false);
 		static bool shutdown();
 
-		static void error(const char* _msg);
+		static void header(const char* _msg);
 		static void message(const char* _msg);
+		static void error(const char* _msg);
 
 	private:
 		static const char* datetime();
