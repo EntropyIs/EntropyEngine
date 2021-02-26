@@ -98,6 +98,11 @@ void log::error(const char* _msg)
 	}
 }
 
+void Entropy::log::trace(Entropy::Event& _event)
+{
+	message(_event.toString().c_str());
+}
+
 const char* log::datetime()
 {
 	//TODO Generate DateTime Stamp

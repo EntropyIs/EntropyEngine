@@ -1,4 +1,5 @@
 #include <EntropyCore.h>
+#include <Entropy/Events/ApplicationEvents.h>
 
 #include <exception>
 

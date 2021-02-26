@@ -10,10 +10,22 @@ namespace Entropy
 		WindowResizeEvent(unsigned int width, unsigned int height) :
 			width(width), height(height) {};
 
-		inline unsigned int getWidth();
-		inline unsigned int getHeight();
+		inline unsigned int getWidth()
+		{
+			return width;
+		}
 
-		std::string toString() const override;
+		inline unsigned int getHeight()
+		{
+			return height;
+		}
+
+		std::string toString() const override
+		{
+			std::stringstream ss;
+			ss << "WindowREsizeEvent: " << width << ", " << height;
+			return ss.str();
+		}
 
 		EVENT_CLASS_TYPE(WINDOW_RESIZE)
 		EVENT_CLASS_CATEGORY(EVENT_CATEGORY_APPLICATION)

@@ -1,5 +1,6 @@
 #pragma once
 #include "API.h"
+#include "Entropy/Events/Event.h"
 
 #include <iostream>
 
@@ -13,6 +14,8 @@ namespace Entropy {
 		static void header(const char* _msg);
 		static void message(const char* _msg);
 		static void error(const char* _msg);
+
+		static void trace(Entropy::Event& _event);
 
 	private:
 		static const char* datetime();

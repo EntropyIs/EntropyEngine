@@ -1,5 +1,7 @@
 #pragma once
 
+#include "ecpch.h"
+
 #include "..\Tools\API.h"
 #include "..\Tools\Log.h"
 
@@ -14,7 +16,7 @@ namespace Entropy
 	};
 
 	enum EventCategory {
-		NONE = 0,
+		EVENT_CATEGORY_NONE = 0,
 		EVENT_CATEGORY_APPLICATION = BIT(0),
 		EVENT_CATEGORY_INPUT = BIT(1),
 		EVENT_CATEGORY_KEYBOARD = BIT(2),
@@ -30,17 +32,45 @@ namespace Entropy
 
 	class ENTROPY_API Event
 	{
-		friend class Dispatcher;
+		friend class EventDispatcher;
 
 	public:
 		virtual EventType getEventType() const = 0;
 		virtual const char* getName() const = 0;
 		virtual int getCategoryFlags() const = 0;
-		virtual std::string toString() const;
+		virtual std::string toString() const
+		{
+			return getName();
+		};
 
-		inline bool isInCategory(EventCategory category);
+		inline bool isInCategory(EventCategory category)
+		{
+			return getCategoryFlags() & category;
+		};
 
 	protected:
 		bool handled = false;
+	};
+
+	class EventDispatcher
+	{
+		template<typename T>
+		using EventFn = std::function<bool(T&)>;
+	public:
+		EventDispatcher(Event& event) : m_Event(event) {}
+
+		template<typename T>
+		bool Dispatch(EventFn<T> func)
+		{
+			if (m_Event.GetEventType() == T::GetStaticType())
+			{
+				m_Event.handled = func(*(T*)&m_Event);
+				return true;
+			}
+			return false;
+		};
+
+	private:
+		Event& m_Event;
 	};
 }
