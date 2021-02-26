@@ -1,6 +1,5 @@
+#include "ecpch.h"
 #include "ApplicationEvents.h"
-
-#include <sstream>
 
 inline unsigned int Entropy::WindowResizeEvent::getWidth()
 {

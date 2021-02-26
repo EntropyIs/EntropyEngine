@@ -1,3 +1,4 @@
+#include "ecpch.h"
 #include "Event.h"
 
 std::string Entropy::Event::toString() const

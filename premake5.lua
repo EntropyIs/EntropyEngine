@@ -18,6 +18,9 @@ project "EntropyLib"
 	targetdir("bin/" .. outputDir .. "/%{prj.name}")
 	objdir("obj/" .. outputDir .. "/%{prj.name}")
 
+	pchheader "ecpch.h"
+	pchsource "src/EntropyLib/ecpch.cpp"
+
 	files
 	{
 		"src/%{prj.name}/**.h",
@@ -36,7 +39,16 @@ project "EntropyLib"
 			"ENTROPY_PLATFORM_WINDOWS",
 			"ENTROPY_BUILD_DLL"
 		}
+
+		includedirs
+		{
+			"src/EntropyLib",
+		}
 		
+		links
+		{
+		}
+
 		postbuildcommands
 		{
 			("{COPY} %{cfg.buildtarget.relpath} ../../bin/" .. outputDir .. "/Sandbox")

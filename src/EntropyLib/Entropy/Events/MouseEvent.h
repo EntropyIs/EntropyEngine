@@ -15,7 +15,7 @@ namespace Entropy
 
 		std::string toString() const override;
 
-		EVENT_CLASS_TYPE(MOUSE_MOVED)
+		EVENT_CLASS_TYPE(MOUSE_MOVED_E)
 		EVENT_CLASS_CATEGORY(EVENT_CATEGORY_MOUSE | EVENT_CATEGORY_INPUT)
 
 	private:

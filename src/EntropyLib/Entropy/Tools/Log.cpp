@@ -1,6 +1,5 @@
+#include "ecpch.h"
 #include "Log.h"
-
-#include <fstream>
 
 using namespace Entropy;
 

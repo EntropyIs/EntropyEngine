@@ -1,6 +1,5 @@
+#include "ecpch.h"
 #include "MouseEvent.h"
-
-#include <sstream>
 
 inline float Entropy::MouseMovedEvent::getX() const
 {

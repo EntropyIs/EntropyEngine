@@ -1,6 +1,5 @@
+#include "ecpch.h"
 #include "KeyEvent.h"
-
-#include <sstream>
 
 inline int Entropy::KeyEvent::getKeyCode() const
 {
