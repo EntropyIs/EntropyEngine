@@ -3,7 +3,7 @@
 #include "ecpch.h"
 
 #include "..\Tools\API.h"
-#include "..\Tools\Log.h"
+//#include "..\Tools\Log.h"
 
 namespace Entropy
 {

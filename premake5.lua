@@ -10,6 +10,11 @@ workspace "EntropyEngine"
 
 outputDir = "%{cfg.architecture}/%{cfg.buildcfg}-%{cfg.system}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "middleware/GLFW/include"
+
+include "middleware/GLFW"
+
 project "EntropyLib"
 	location "src/EntropyLib"
 	kind "SharedLib"
@@ -26,8 +31,18 @@ project "EntropyLib"
 		"src/%{prj.name}/**.h",
 		"src/%{prj.name}/**.cpp",
 	}
-	
-	
+
+	includedirs
+	{
+		"src/EntropyLib",
+		"%{IncludeDir.GLFW}",
+	}
+		
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
 
 	filter "system:windows"
 		cppdialect "C++17"
@@ -38,15 +53,6 @@ project "EntropyLib"
 		{
 			"ENTROPY_PLATFORM_WINDOWS",
 			"ENTROPY_BUILD_DLL"
-		}
-
-		includedirs
-		{
-			"src/EntropyLib",
-		}
-		
-		links
-		{
 		}
 
 		postbuildcommands
@@ -80,6 +86,16 @@ project "Sandbox"
 		"src/%{prj.name}/**.cpp",
 	}
 
+	includedirs
+	{
+		"src/EntropyLib",
+	}
+
+	links
+	{
+		"EntropyLib",
+	}
+
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
@@ -88,16 +104,6 @@ project "Sandbox"
 		defines
 		{
 			"ENTROPY_PLATFORM_WINDOWS"
-		}
-
-		includedirs
-		{
-			"src/EntropyLib",
-		}
-
-		links
-		{
-			"EntropyLib",
 		}
 
 		filter "configurations:Debug"

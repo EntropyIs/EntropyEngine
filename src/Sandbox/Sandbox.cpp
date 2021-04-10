@@ -14,11 +14,18 @@ public:
 	{
 		Entropy::log::init(_debug);
 		Entropy::log::header("Entropy Engine: Sandbox Initalization.");
+
+		window = std::unique_ptr<Entropy::Window>(Entropy::Window::Create());
+		running = true;
 	}
 
 	virtual void Run() override
 	{
 		Entropy::log::header("Entropy Engine: Sandbox Run.");
+		while(running)
+		{
+			
+		}
 	}
 	
 	virtual void Shutdown() override

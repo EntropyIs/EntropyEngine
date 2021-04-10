@@ -15,7 +15,7 @@ namespace Entropy {
 		static void message(const char* _msg);
 		static void error(const char* _msg);
 
-		static void trace(Entropy::Event& _event);
+		static void trace(Event& _event);
 
 	private:
 		static const char* datetime();
