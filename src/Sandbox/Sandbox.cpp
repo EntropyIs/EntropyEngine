@@ -24,7 +24,7 @@ public:
 		Entropy::log::header("Entropy Engine: Sandbox Run.");
 		while(running)
 		{
-			
+			window->OnUpdate();
 		}
 	}
 	

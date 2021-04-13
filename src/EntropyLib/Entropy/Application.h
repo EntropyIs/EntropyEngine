@@ -14,6 +14,8 @@ namespace Entropy
 		virtual void Run() = 0;
 		virtual void Shutdown() = 0;
 
+		virtual void OnEvent(Event& e);
+
 	protected:
 		std::unique_ptr<Window> window;
 

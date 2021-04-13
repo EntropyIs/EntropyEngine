@@ -3,8 +3,12 @@
 
 #include "Entropy/Tools/Log.h"
 
+#define BIND_EVENT_FUNCTION(x) std::bind(&x, this, std::placeholders::_1)
+
 Entropy::Application::Application()
 {
+	window = std::unique_ptr<Entropy::Window>(Entropy::Window::Create());
+	window->SetEventCallback(BIND_EVENT_FUNCTION(Application::OnEvent));
 }
 
 Entropy::Application::~Application()
@@ -19,4 +23,9 @@ void Entropy::Application::Run()
 	{
 		window->OnUpdate();
 	}
+}
+
+void Entropy::Application::OnEvent(Event& e)
+{
+	Entropy::log::trace(e);
 }
