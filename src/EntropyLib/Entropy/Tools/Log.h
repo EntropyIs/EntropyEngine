@@ -14,6 +14,7 @@ namespace Entropy {
 		static void header(const char* _msg);
 		static void message(const char* _msg);
 		static void error(const char* _msg);
+		static void error(const char* _prefix, int _code, const char* _msg);
 
 		static void trace(Event& _event);
 

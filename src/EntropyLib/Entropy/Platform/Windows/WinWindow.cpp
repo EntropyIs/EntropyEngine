@@ -8,6 +8,11 @@
 
 static bool GLFWInitalized = false;
 
+static void GLFWErrorCallback(int error, const char* description)
+{
+    Entropy::log::error("GLFW", error, description);
+}
+
 Entropy::Window* Entropy::Window::Create(const WindowProps& props)
 {
     return new WinWindow(props);
@@ -41,6 +46,7 @@ unsigned int Entropy::WinWindow::GetHeight() const
 
 void Entropy::WinWindow::SetEventCallback(const EventCallbackFn& callback)
 {
+    data.EventCallback = callback;
 }
 
 void Entropy::WinWindow::SetVSync(bool enabled)
@@ -69,6 +75,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
     {
         if (!glfwInit())
             Entropy::log::error("Could not initalize GLFW!");
+        glfwSetErrorCallback(GLFWErrorCallback);
         GLFWInitalized = true;
     }
 

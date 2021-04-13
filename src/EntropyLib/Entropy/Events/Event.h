@@ -62,7 +62,7 @@ namespace Entropy
 		template<typename T>
 		bool Dispatch(EventFn<T> func)
 		{
-			if (m_Event.GetEventType() == T::GetStaticType())
+			if (m_Event.getEventType() == T::getStaticType())
 			{
 				m_Event.handled = func(*(T*)&m_Event);
 				return true;
