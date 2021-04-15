@@ -1,7 +1,7 @@
 #pragma once
 #include "Tools/API.h"
 #include "Window.h"
-
+#include "Layers/LayerStack.h"
 #include "Events/ApplicationEvents.h"
 
 namespace Entropy
@@ -12,18 +12,23 @@ namespace Entropy
 		Application();
 		virtual ~Application();
 
-		virtual void Init(bool _debug = false);
+		virtual void Init(bool debug = false);
 		virtual void Run();
 		virtual void Shutdown();
 
 		virtual void OnEvent(Event& e);
 
+		virtual void PushLayer(Layer* layer);
+		virtual void PushOverlay(Layer* overlay);
+
 		virtual bool OnWindowClose(WindowCloseEvent& e);
 
 	protected:
-		std::unique_ptr<Window> window;
+		std::unique_ptr<Window> _window;
 
-		bool running;
+		LayerStack _layerStack;
+
+		bool _running;
 	};
 
 	// To Be Defined In CLIENT

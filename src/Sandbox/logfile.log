@@ -1,88 +1,768 @@
 Logfile Generated: DATE_TIME
 #DATE_TIME: Entropy Engine: Default Initalization.#
 #DATE_TIME: Entropy Engine: Default Run.#
-DATE_TIME: MouseMovedEvent: 455, 206
-DATE_TIME: MouseMovedEvent: 458, 208
-DATE_TIME: MouseMovedEvent: 459, 208
-DATE_TIME: MouseMovedEvent: 461, 210
-DATE_TIME: MouseMovedEvent: 465, 215
-DATE_TIME: MouseMovedEvent: 469, 221
-DATE_TIME: MouseMovedEvent: 476, 230
-DATE_TIME: MouseMovedEvent: 487, 244
-DATE_TIME: MouseMovedEvent: 488, 245
-DATE_TIME: MouseMovedEvent: 506, 263
-DATE_TIME: MouseMovedEvent: 507, 264
-DATE_TIME: MouseMovedEvent: 530, 283
-DATE_TIME: MouseMovedEvent: 550, 296
-DATE_TIME: MouseMovedEvent: 552, 297
-DATE_TIME: MouseMovedEvent: 554, 298
-DATE_TIME: MouseMovedEvent: 572, 306
-DATE_TIME: MouseMovedEvent: 601, 315
-DATE_TIME: MouseMovedEvent: 604, 315
-DATE_TIME: MouseMovedEvent: 606, 315
-DATE_TIME: MouseMovedEvent: 608, 316
-DATE_TIME: MouseMovedEvent: 609, 316
-DATE_TIME: MouseMovedEvent: 612, 317
-DATE_TIME: MouseMovedEvent: 636, 320
-DATE_TIME: MouseMovedEvent: 640, 320
-DATE_TIME: MouseMovedEvent: 642, 320
-DATE_TIME: MouseMovedEvent: 644, 321
-DATE_TIME: MouseMovedEvent: 647, 321
-DATE_TIME: MouseMovedEvent: 651, 321
-DATE_TIME: MouseMovedEvent: 654, 322
-DATE_TIME: MouseMovedEvent: 656, 322
-DATE_TIME: MouseMovedEvent: 659, 322
-DATE_TIME: MouseMovedEvent: 662, 322
-DATE_TIME: MouseMovedEvent: 663, 322
-DATE_TIME: MouseMovedEvent: 665, 322
-DATE_TIME: MouseMovedEvent: 667, 322
-DATE_TIME: MouseMovedEvent: 673, 322
-DATE_TIME: MouseMovedEvent: 676, 322
-DATE_TIME: MouseMovedEvent: 708, 320
-DATE_TIME: MouseMovedEvent: 711, 319
-DATE_TIME: MouseMovedEvent: 714, 318
-DATE_TIME: MouseMovedEvent: 768, 300
-DATE_TIME: MouseMovedEvent: 773, 298
-DATE_TIME: MouseMovedEvent: 777, 296
-DATE_TIME: MouseMovedEvent: 855, 250
-DATE_TIME: MouseMovedEvent: 861, 247
-DATE_TIME: MouseMovedEvent: 951, 185
-DATE_TIME: MouseMovedEvent: 1042, 130
-DATE_TIME: MouseMovedEvent: 1051, 126
-DATE_TIME: MouseMovedEvent: 1127, 88
-DATE_TIME: MouseMovedEvent: 1131, 87
-DATE_TIME: MouseMovedEvent: 1133, 85
-DATE_TIME: MouseMovedEvent: 1139, 82
-DATE_TIME: MouseMovedEvent: 1143, 81
-DATE_TIME: MouseMovedEvent: 1146, 79
-DATE_TIME: MouseMovedEvent: 1150, 77
-DATE_TIME: MouseMovedEvent: 1153, 76
-DATE_TIME: MouseMovedEvent: 1156, 74
-DATE_TIME: MouseMovedEvent: 1161, 72
-DATE_TIME: MouseMovedEvent: 1171, 67
-DATE_TIME: MouseMovedEvent: 1174, 66
-DATE_TIME: MouseMovedEvent: 1177, 64
-DATE_TIME: MouseMovedEvent: 1180, 63
-DATE_TIME: MouseMovedEvent: 1186, 59
-DATE_TIME: MouseMovedEvent: 1188, 58
-DATE_TIME: MouseMovedEvent: 1191, 57
-DATE_TIME: MouseMovedEvent: 1193, 55
-DATE_TIME: MouseMovedEvent: 1217, 40
-DATE_TIME: MouseMovedEvent: 1218, 39
-DATE_TIME: MouseMovedEvent: 1219, 38
-DATE_TIME: MouseMovedEvent: 1229, 28
-DATE_TIME: MouseMovedEvent: 1231, 22
-DATE_TIME: MouseMovedEvent: 1231, 18
-DATE_TIME: MouseMovedEvent: 1230, 16
-DATE_TIME: MouseMovedEvent: 1230, 15
-DATE_TIME: MouseMovedEvent: 1229, 14
-DATE_TIME: MouseMovedEvent: 1229, 12
-DATE_TIME: MouseMovedEvent: 1228, 11
-DATE_TIME: MouseMovedEvent: 1228, 9
-DATE_TIME: MouseMovedEvent: 1227, 6
-DATE_TIME: MouseMovedEvent: 1227, 5
-DATE_TIME: MouseMovedEvent: 1228, 2
-DATE_TIME: MouseMovedEvent: 1228, 1
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1275, 433
+DATE_TIME: MouseMovedEvent: 1267, 429
+DATE_TIME: MouseMovedEvent: 1263, 428
+DATE_TIME: MouseMovedEvent: 1259, 425
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1189, 383
+DATE_TIME: MouseMovedEvent: 1170, 371
+DATE_TIME: MouseMovedEvent: 1167, 369
+DATE_TIME: MouseMovedEvent: 1157, 363
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1083, 315
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 959, 233
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 846, 160
+DATE_TIME: MouseMovedEvent: 840, 156
+DATE_TIME: MouseMovedEvent: 833, 151
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 746, 101
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 682, 71
+DATE_TIME: MouseMovedEvent: 680, 70
+DATE_TIME: MouseMovedEvent: 678, 69
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 641, 54
+DATE_TIME: MouseMovedEvent: 639, 54
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 618, 46
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 612, 43
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 611, 43
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 612, 49
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 614, 59
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 616, 71
+DATE_TIME: MouseMovedEvent: 616, 73
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 617, 84
+DATE_TIME: MouseMovedEvent: 617, 85
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 617, 93
+DATE_TIME: MouseMovedEvent: 617, 94
+DATE_TIME: MouseMovedEvent: 617, 95
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 617, 101
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 608, 114
+DATE_TIME: MouseMovedEvent: 608, 115
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 593, 134
+DATE_TIME: MouseMovedEvent: 590, 139
+DATE_TIME: MouseMovedEvent: 589, 139
+DATE_TIME: MouseMovedEvent: 588, 140
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 580, 147
+DATE_TIME: MouseMovedEvent: 577, 150
+DATE_TIME: MouseMovedEvent: 576, 150
+DATE_TIME: MouseMovedEvent: 576, 151
+DATE_TIME: MouseMovedEvent: 575, 151
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 570, 152
+DATE_TIME: MouseMovedEvent: 569, 152
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 567, 152
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 565, 145
+DATE_TIME: MouseMovedEvent: 565, 144
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 564, 125
+DATE_TIME: MouseMovedEvent: 563, 121
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 563, 98
+DATE_TIME: MouseMovedEvent: 563, 97
+DATE_TIME: MouseMovedEvent: 562, 95
+DATE_TIME: MouseMovedEvent: 562, 92
+DATE_TIME: MouseMovedEvent: 562, 89
+DATE_TIME: MouseMovedEvent: 562, 87
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 561, 75
+DATE_TIME: MouseMovedEvent: 561, 74
+DATE_TIME: MouseMovedEvent: 561, 72
+DATE_TIME: MouseMovedEvent: 561, 71
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 559, 55
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 45
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 41
+DATE_TIME: MouseMovedEvent: 557, 40
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 39
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 38
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 36
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 34
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 557, 32
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 558, 31
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 559, 31
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 560, 29
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 562, 26
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 564, 22
+DATE_TIME: MouseMovedEvent: 564, 21
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 565, 17
+DATE_TIME: MouseMovedEvent: 565, 16
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 566, 12
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 566, 7
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 566, 2
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 515, 3
+DATE_TIME: MouseMovedEvent: 513, 6
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 504, 25
+DATE_TIME: MouseMovedEvent: 503, 27
+DATE_TIME: MouseMovedEvent: 503, 28
+DATE_TIME: MouseMovedEvent: 503, 29
+DATE_TIME: MouseMovedEvent: 502, 31
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 498, 54
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 496, 82
+DATE_TIME: MouseMovedEvent: 496, 83
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 496, 107
+DATE_TIME: MouseMovedEvent: 496, 108
+DATE_TIME: MouseMovedEvent: 496, 110
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 496, 126
+DATE_TIME: MouseMovedEvent: 496, 127
+DATE_TIME: MouseMovedEvent: 496, 129
+DATE_TIME: MouseMovedEvent: 496, 130
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 497, 146
+DATE_TIME: MouseMovedEvent: 498, 147
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 500, 163
+DATE_TIME: MouseMovedEvent: 500, 165
+DATE_TIME: MouseMovedEvent: 500, 166
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 503, 178
+DATE_TIME: MouseMovedEvent: 503, 179
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 505, 187
+DATE_TIME: MouseMovedEvent: 505, 188
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 506, 194
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 507, 199
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 507, 202
+DATE_TIME: MouseMovedEvent: 507, 203
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 507, 207
+DATE_TIME: MouseMovedEvent: 507, 208
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 507, 215
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 505, 225
+DATE_TIME: MouseMovedEvent: 504, 226
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 502, 234
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 497, 243
+DATE_TIME: MouseMovedEvent: 497, 244
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 490, 253
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 482, 265
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 469, 277
+DATE_TIME: MouseMovedEvent: 468, 279
+DATE_TIME: MouseMovedEvent: 466, 279
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 449, 291
+DATE_TIME: MouseMovedEvent: 448, 292
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 423, 303
+DATE_TIME: MouseMovedEvent: 422, 304
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 404, 312
+DATE_TIME: MouseMovedEvent: 402, 313
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 387, 319
+DATE_TIME: MouseMovedEvent: 386, 319
+DATE_TIME: MouseMovedEvent: 385, 320
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 372, 325
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 355, 332
+DATE_TIME: MouseMovedEvent: 354, 333
+DATE_TIME: MouseMovedEvent: 353, 333
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 331, 340
+DATE_TIME: MouseMovedEvent: 329, 341
+DATE_TIME: MouseMovedEvent: 328, 341
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 302, 348
+DATE_TIME: MouseMovedEvent: 301, 349
+DATE_TIME: MouseMovedEvent: 300, 350
+DATE_TIME: MouseMovedEvent: 297, 351
+DATE_TIME: MouseMovedEvent: 296, 351
+DATE_TIME: MouseMovedEvent: 294, 351
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 270, 357
+DATE_TIME: MouseMovedEvent: 267, 359
+DATE_TIME: MouseMovedEvent: 265, 359
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 234, 365
+DATE_TIME: MouseMovedEvent: 233, 366
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 201, 372
+DATE_TIME: MouseMovedEvent: 197, 372
+DATE_TIME: MouseMovedEvent: 195, 372
+DATE_TIME: MouseMovedEvent: 194, 373
+DATE_TIME: MouseMovedEvent: 192, 373
+DATE_TIME: MouseMovedEvent: 190, 374
+DATE_TIME: MouseMovedEvent: 188, 374
+DATE_TIME: MouseMovedEvent: 187, 374
+DATE_TIME: MouseMovedEvent: 185, 375
+DATE_TIME: MouseMovedEvent: 184, 375
+DATE_TIME: MouseMovedEvent: 182, 375
+DATE_TIME: MouseMovedEvent: 176, 376
+DATE_TIME: MouseMovedEvent: 173, 376
+DATE_TIME: MouseMovedEvent: 171, 377
+DATE_TIME: MouseMovedEvent: 170, 377
+DATE_TIME: MouseMovedEvent: 167, 377
+DATE_TIME: MouseMovedEvent: 166, 377
+DATE_TIME: MouseMovedEvent: 165, 377
+DATE_TIME: MouseMovedEvent: 164, 377
+DATE_TIME: MouseMovedEvent: 162, 378
+DATE_TIME: MouseMovedEvent: 159, 379
+DATE_TIME: MouseMovedEvent: 158, 379
+DATE_TIME: MouseMovedEvent: 156, 379
+DATE_TIME: MouseMovedEvent: 155, 379
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 153, 379
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 135, 380
+DATE_TIME: MouseMovedEvent: 134, 380
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 124, 380
+DATE_TIME: MouseMovedEvent: 123, 380
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 116, 380
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 113, 379
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 113, 378
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 113, 377
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 115, 377
+DATE_TIME: MouseMovedEvent: 116, 377
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 120, 380
+DATE_TIME: MouseMovedEvent: 120, 381
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 125, 388
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 131, 400
+DATE_TIME: MouseMovedEvent: 131, 401
+DATE_TIME: MouseMovedEvent: 132, 401
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 143, 420
+DATE_TIME: MouseMovedEvent: 145, 422
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 162, 447
+DATE_TIME: MouseMovedEvent: 164, 449
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 192, 482
+DATE_TIME: MouseMovedEvent: 193, 483
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 225, 513
+DATE_TIME: MouseMovedEvent: 228, 515
+DATE_TIME: MouseMovedEvent: 231, 517
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 268, 539
+DATE_TIME: MouseMovedEvent: 270, 541
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 311, 556
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 351, 564
+DATE_TIME: MouseMovedEvent: 354, 565
+DATE_TIME: MouseMovedEvent: 357, 565
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 390, 567
+DATE_TIME: MouseMovedEvent: 393, 567
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 430, 567
+DATE_TIME: MouseMovedEvent: 433, 567
+DATE_TIME: MouseMovedEvent: 435, 567
+DATE_TIME: MouseMovedEvent: 437, 567
+DATE_TIME: MouseMovedEvent: 440, 566
+DATE_TIME: MouseMovedEvent: 443, 566
+DATE_TIME: MouseMovedEvent: 445, 566
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 471, 563
+DATE_TIME: MouseMovedEvent: 474, 563
+DATE_TIME: MouseMovedEvent: 475, 563
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 509, 556
+DATE_TIME: MouseMovedEvent: 512, 555
+DATE_TIME: MouseMovedEvent: 514, 554
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 544, 542
+DATE_TIME: MouseMovedEvent: 546, 541
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 568, 526
+DATE_TIME: MouseMovedEvent: 570, 525
+DATE_TIME: MouseMovedEvent: 570, 524
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 583, 507
+DATE_TIME: MouseMovedEvent: 583, 506
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 588, 486
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 585, 461
+DATE_TIME: MouseMovedEvent: 584, 460
+DATE_TIME: MouseMovedEvent: 584, 459
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 564, 433
+DATE_TIME: MouseMovedEvent: 563, 432
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 525, 409
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 466, 395
+DATE_TIME: MouseMovedEvent: 460, 394
+DATE_TIME: MouseMovedEvent: 456, 394
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 371, 393
+DATE_TIME: MouseMovedEvent: 362, 394
+DATE_TIME: MouseMovedEvent: 355, 395
+DATE_TIME: MouseMovedEvent: 349, 395
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 231, 413
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 80, 441
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 13, 469
+DATE_TIME: MouseMovedEvent: 18, 469
+DATE_TIME: MouseMovedEvent: 24, 469
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 109, 468
+DATE_TIME: MouseMovedEvent: 114, 468
+DATE_TIME: MouseMovedEvent: 120, 468
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 200, 468
+DATE_TIME: MouseMovedEvent: 208, 468
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 276, 468
+DATE_TIME: MouseMovedEvent: 280, 468
+DATE_TIME: MouseMovedEvent: 284, 468
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 339, 468
+DATE_TIME: MouseMovedEvent: 343, 468
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 394, 470
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 438, 472
+DATE_TIME: MouseMovedEvent: 440, 472
+DATE_TIME: MouseMovedEvent: 442, 472
+DATE_TIME: MouseMovedEvent: 445, 472
+DATE_TIME: MouseMovedEvent: 447, 472
+DATE_TIME: MouseMovedEvent: 452, 473
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 472, 473
+DATE_TIME: MouseMovedEvent: 474, 473
+DATE_TIME: MouseMovedEvent: 476, 473
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 493, 473
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 502, 474
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 503, 474
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 505, 474
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 509, 469
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 514, 458
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 519, 443
+DATE_TIME: MouseMovedEvent: 519, 442
+DATE_TIME: MouseMovedEvent: 519, 440
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 521, 418
+DATE_TIME: MouseMovedEvent: 521, 416
+DATE_TIME: MouseMovedEvent: 521, 415
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 521, 392
+DATE_TIME: MouseMovedEvent: 521, 390
+DATE_TIME: MouseMovedEvent: 521, 388
+DATE_TIME: MouseMovedEvent: 521, 386
+DATE_TIME: MouseMovedEvent: 521, 385
+DATE_TIME: MouseMovedEvent: 521, 383
+DATE_TIME: MouseMovedEvent: 521, 382
+DATE_TIME: MouseMovedEvent: 521, 381
+DATE_TIME: MouseMovedEvent: 521, 379
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 520, 371
+DATE_TIME: MouseMovedEvent: 520, 370
+DATE_TIME: MouseMovedEvent: 520, 369
+DATE_TIME: MouseMovedEvent: 520, 366
+DATE_TIME: MouseMovedEvent: 519, 365
+DATE_TIME: MouseMovedEvent: 519, 364
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 516, 351
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 511, 332
+DATE_TIME: MouseMovedEvent: 510, 330
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 504, 313
+DATE_TIME: MouseMovedEvent: 503, 312
+DATE_TIME: MouseMovedEvent: 502, 311
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 496, 296
+DATE_TIME: MouseMovedEvent: 495, 295
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 489, 284
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 484, 277
+DATE_TIME: MouseMovedEvent: 484, 276
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 478, 272
+DATE_TIME: MouseMovedEvent: 478, 271
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 467, 267
+DATE_TIME: MouseMovedEvent: 466, 267
+DATE_TIME: MouseMovedEvent: 464, 267
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 437, 265
+DATE_TIME: MouseMovedEvent: 434, 265
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 382, 265
+DATE_TIME: MouseMovedEvent: 379, 265
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 303, 265
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 220, 260
+DATE_TIME: MouseMovedEvent: 211, 259
+DATE_TIME: MouseMovedEvent: 206, 259
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 122, 253
+DATE_TIME: MouseMovedEvent: 117, 253
+DATE_TIME: MouseMovedEvent: 111, 252
+DATE_TIME: MouseMovedEvent: 100, 252
+DATE_TIME: MouseMovedEvent: 96, 252
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 31, 250
+DATE_TIME: MouseMovedEvent: 21, 250
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 869, 0
+DATE_TIME: MouseMovedEvent: 869, 1
+DATE_TIME: MouseMovedEvent: 870, 2
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 875, 9
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 880, 18
+DATE_TIME: MouseMovedEvent: 880, 19
+DATE_TIME: MouseMovedEvent: 881, 20
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 884, 24
+DATE_TIME: MouseMovedEvent: 885, 25
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 887, 26
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 888, 26
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 893, 26
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 896, 26
+DATE_TIME: MouseMovedEvent: 897, 26
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 900, 25
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 904, 24
+DATE_TIME: MouseMovedEvent: 905, 24
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 910, 24
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 914, 27
+DATE_TIME: MouseMovedEvent: 915, 27
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 916, 36
+DATE_TIME: MouseMovedEvent: 915, 37
+DATE_TIME: MouseMovedEvent: 915, 38
+DATE_TIME: MouseMovedEvent: 914, 39
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 902, 53
+DATE_TIME: MouseMovedEvent: 901, 54
+DATE_TIME: MouseMovedEvent: 900, 56
+DATE_TIME: MouseMovedEvent: 899, 57
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 872, 96
+DATE_TIME: MouseMovedEvent: 869, 101
+DATE_TIME: MouseMovedEvent: 865, 104
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 785, 193
+DATE_TIME: MouseMovedEvent: 777, 200
+DATE_TIME: MouseMovedEvent: 767, 209
+DATE_TIME: MouseMovedEvent: 761, 214
+DATE_TIME: MouseMovedEvent: 752, 221
+DATE_TIME: MouseMovedEvent: 741, 230
+DATE_TIME: MouseMovedEvent: 735, 235
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 717, 250
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 748, 206
+DATE_TIME: MouseMovedEvent: 754, 199
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 862, 121
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 975, 93
+DATE_TIME: MouseMovedEvent: 981, 91
+DATE_TIME: MouseMovedEvent: 985, 91
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1063, 71
+DATE_TIME: MouseMovedEvent: 1067, 70
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1125, 55
+DATE_TIME: MouseMovedEvent: 1128, 55
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1162, 46
+DATE_TIME: MouseMovedEvent: 1164, 45
+DATE_TIME: MouseMovedEvent: 1167, 44
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1188, 40
+DATE_TIME: MouseMovedEvent: 1190, 39
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1207, 34
+DATE_TIME: MouseMovedEvent: 1208, 34
+DATE_TIME: MouseMovedEvent: 1210, 34
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1229, 27
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: MouseMovedEvent: 1254, 13
+DATE_TIME: MouseMovedEvent: 1257, 12
+DATE_TIME: MouseMovedEvent: 1259, 11
+DATE_TIME: MouseMovedEvent: 1262, 10
+DATE_TIME: MouseMovedEvent: 1264, 9
+DATE_TIME: MouseMovedEvent: 1266, 8
+DATE_TIME: MouseMovedEvent: 1267, 8
+DATE_TIME: MouseMovedEvent: 1271, 6
+DATE_TIME: MouseMovedEvent: 1272, 5
+DATE_TIME: MouseMovedEvent: 1273, 5
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
+DATE_TIME: ExampleLayer::Update
 DATE_TIME: WINDOW_CLOSE
 #DATE_TIME: Entropy Engine: Default Shutdown.#
 Logfile Closed: DATE_TIME

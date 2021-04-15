@@ -62,14 +62,17 @@ project "EntropyLib"
 
 		filter "configurations:Debug"
 			defines "ENTROPY_DEBUG"
+			buildoptions "/MDd"
 			symbols "On"
 
 		filter "configurations:Release"
 			defines "ENTROPY_RELEASE"
+			buildoptions "/MD"
 			symbols "On"
 
 		filter "configurations:Dist"
 			defines "ENTROPY_DIST"
+			buildoptions "/MD"
 			symbols "On"
 
 project "Sandbox"
@@ -108,12 +111,15 @@ project "Sandbox"
 
 		filter "configurations:Debug"
 			defines "ENTROPY_DEBUG"
+			buildoptions "/MDd"
 			symbols "On"
 
 		filter "configurations:Release"
 			defines "ENTROPY_RELEASE"
+			buildoptions "/MD"
 			symbols "On"
 
 		filter "configurations:Dist"
 			defines "ENTROPY_DIST"
+			buildoptions "/MD"
 			symbols "On"

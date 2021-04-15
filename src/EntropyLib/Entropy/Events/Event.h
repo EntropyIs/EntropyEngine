@@ -48,8 +48,10 @@ namespace Entropy
 			return getCategoryFlags() & category;
 		};
 
+		bool isHandled();
+
 	protected:
-		bool handled = false;
+		bool _handled = false;
 	};
 
 	class EventDispatcher
@@ -64,7 +66,7 @@ namespace Entropy
 		{
 			if (m_Event.getEventType() == T::getStaticType())
 			{
-				m_Event.handled = func(*(T*)&m_Event);
+				m_Event._handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;

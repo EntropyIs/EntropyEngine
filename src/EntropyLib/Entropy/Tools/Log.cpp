@@ -115,8 +115,21 @@ void Entropy::log::error(const char* _prefix, int _code, const char* _msg)
 	}
 }
 
-void Entropy::log::trace(Entropy::Event& _event)
+void Entropy::log::trace(const char* _prefix, Entropy::Event& _event)
 {
+	if (initalized)
+	{
+		std::ofstream logger;
+		logger.open(file_path, std::ofstream::app);
+		if (logger.is_open())
+		{
+			logger << datetime() << ": " << _msg << std::endl;
+		}
+		logger.close();
+
+		if (debug)
+			std::cout << console_color::forground_green << datetime() << console_color::reset << ": " << _msg << std::endl;
+	}
 	message(_event.toString().c_str());
 }
 
