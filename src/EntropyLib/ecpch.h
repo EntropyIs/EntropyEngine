@@ -13,6 +13,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include <chrono>
+#include <ctime>
+
 #ifdef ENTROPY_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

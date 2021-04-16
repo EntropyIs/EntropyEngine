@@ -20,14 +20,14 @@ Entropy::Application::~Application()
 void Entropy::Application::Init(bool _debug)
 {
 	Entropy::log::init(_debug);
-	Entropy::log::header("Entropy Engine: Default Initalization.");
+	Entropy::log::header("APP", "Entropy Engine: Default Initalization.");
 
 	_running = true;
 }
 
 void Entropy::Application::Run()
 {
-	Entropy::log::header("Entropy Engine: Default Run.");
+	Entropy::log::header("APP", "Entropy Engine: Default Run.");
 
 	while (_running)
 	{
@@ -40,7 +40,7 @@ void Entropy::Application::Run()
 
 void Entropy::Application::Shutdown()
 {
-	Entropy::log::header("Entropy Engine: Default Shutdown.");
+	Entropy::log::header("APP", "Entropy Engine: Default Shutdown.");
 	Entropy::log::shutdown();
 }
 
@@ -48,6 +48,8 @@ void Entropy::Application::OnEvent(Event& e)
 {
 	EventDispatcher dispatcher(e);
 	dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FUNCTION(Application::OnWindowClose));
+
+	Entropy::log::trace("APP", e);
 
 	for (auto it = _layerStack.end(); it != _layerStack.begin(); )
 	{

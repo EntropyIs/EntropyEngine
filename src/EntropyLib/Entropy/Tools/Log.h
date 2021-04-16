@@ -2,7 +2,7 @@
 #include "API.h"
 #include "Entropy/Events/Event.h"
 
-#include <iostream>
+#include <string>
 
 namespace Entropy {
 	class ENTROPY_API log
@@ -11,15 +11,14 @@ namespace Entropy {
 		static bool init(const bool debug = false);
 		static bool shutdown();
 
-		static void header(const char* _msg);
-		static void message(const char* _msg);
-		static void error(const char* _msg);
+		static void header(const char* _prefix, const char* _msg);
+		static void message(const char* _prefix, const char* _msg);
+		static void error(const char* _prefix, const char* _msg);
 		static void error(const char* _prefix, int _code, const char* _msg);
-
-		static void trace(Event& _event);
+		static void trace(const char* _prefix, Event& _event);
 
 	private:
-		static const char* datetime();
+		static std::string datetime();
 
 		static bool initalized;
 		static bool debug;

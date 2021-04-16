@@ -65,7 +65,7 @@ bool Entropy::WinWindow::IsVSync() const
 
 void Entropy::WinWindow::Init(const WindowProps& props)
 {
-    Entropy::log::message(std::string("Createing window " + props.Title + " (" + std::to_string(props.Width) + "," + std::to_string(props.Height) + ")").c_str());
+    Entropy::log::message("WINDOW", std::string("Createing window " + props.Title + " (" + std::to_string(props.Width) + "," + std::to_string(props.Height) + ")").c_str());
 
     data.Title = props.Title;
     data.Width = props.Width;
@@ -74,7 +74,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
     if (!GLFWInitalized)
     {
         if (!glfwInit())
-            Entropy::log::error("Could not initalize GLFW!");
+            Entropy::log::error("WINDOW", "Could not initalize GLFW!");
         glfwSetErrorCallback(GLFWErrorCallback);
         GLFWInitalized = true;
     }

@@ -15,7 +15,7 @@ public:
 
 	void OnEvent(Entropy::Event& e) override
 	{
-		Entropy::log::trace(e);
+		Entropy::log::trace(GetName().c_str(), e);
 	}
 };
 
