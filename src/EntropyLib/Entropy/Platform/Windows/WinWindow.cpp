@@ -73,6 +73,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
     data.Width = props.Width;
     data.Height = props.Height;
 
+    //Initalize GLFW`
     if (!GLFWInitalized)
     {
         if (!glfwInit())
@@ -81,10 +82,13 @@ void Entropy::WinWindow::Init(const WindowProps& props)
         GLFWInitalized = true;
     }
 
+    //Create Window
     window = glfwCreateWindow((int)props.Width, (int)props.Height, props.Title.c_str(), nullptr, nullptr);
+    if (window == NULL)
+        Entropy::log::error("WINDOW", "Failed to create GLFW Window");
     glfwMakeContextCurrent(window);
-    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-    if (!status)
+
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         Entropy::log::error("WINDOW", "Failed to initalize GLAD!");
     glfwSetWindowUserPointer(window, &data);
     SetVSync(true);

@@ -123,12 +123,12 @@ void Entropy::log::trace(const char* _prefix, Entropy::Event& _event)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << " " << _prefix << ": " << _event.getName() << std::endl;
+			logger << datetime() << " " << _prefix << ": " << _event.toString() << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cout << console_color::forground_white << datetime() << " " << _prefix << ": " << _event.getName() << console_color::reset << std::endl;
+			std::cout << console_color::forground_white << datetime() << " " << _prefix << ": " << _event.toString() << console_color::reset << std::endl;
 	}
 }
 
