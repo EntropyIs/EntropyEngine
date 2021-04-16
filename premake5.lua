@@ -56,7 +56,8 @@ project "EntropyLib"
 		defines
 		{
 			"ENTROPY_PLATFORM_WINDOWS",
-			"ENTROPY_BUILD_DLL"
+			"ENTROPY_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

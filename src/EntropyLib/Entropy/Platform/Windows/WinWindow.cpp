@@ -6,6 +6,8 @@
 #include "Entropy/Events/KeyEvent.h"
 #include "Entropy/Events/MouseEvent.h"
 
+#include <glad/glad.h>
+
 static bool GLFWInitalized = false;
 
 static void GLFWErrorCallback(int error, const char* description)
@@ -81,6 +83,9 @@ void Entropy::WinWindow::Init(const WindowProps& props)
 
     window = glfwCreateWindow((int)props.Width, (int)props.Height, props.Title.c_str(), nullptr, nullptr);
     glfwMakeContextCurrent(window);
+    int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+    if (!status)
+        Entropy::log::error("WINDOW", "Failed to initalize GLAD!");
     glfwSetWindowUserPointer(window, &data);
     SetVSync(true);
 
