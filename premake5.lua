@@ -12,8 +12,10 @@ outputDir = "%{cfg.architecture}/%{cfg.buildcfg}-%{cfg.system}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "middleware/GLFW/include"
+IncludeDir["GLAD"] = "middleware/GLAD/include"
 
 include "middleware/GLFW"
+include "middleware/GLAD"
 
 project "EntropyLib"
 	location "src/EntropyLib"
@@ -36,11 +38,13 @@ project "EntropyLib"
 	{
 		"src/EntropyLib",
 		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}"
 	}
 		
 	links
 	{
 		"GLFW",
+		"GLAD",
 		"opengl32.lib"
 	}
 
