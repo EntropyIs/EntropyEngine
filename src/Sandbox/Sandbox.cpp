@@ -19,7 +19,8 @@ public:
 
 	void OnEvent(Entropy::Event& e) override
 	{
-		Entropy::log::trace("EXAMPLE_LAYER", e);
+		// TODO: Handle Layer Events, and Pass to Game Elements as applicable
+		Entropy::LOG::Trace("EXAMPLE_LAYER", e);
 	}
 };
 

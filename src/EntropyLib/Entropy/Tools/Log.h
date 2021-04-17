@@ -5,76 +5,77 @@
 #include <string>
 
 namespace Entropy {
-	class ENTROPY_API log
+	class ENTROPY_API LOG
 	{
 	public:
-		static bool init(const bool debug = false);
-		static bool shutdown();
+		static bool Init(const bool debug = false);
+		static bool Shutdown();
 
-		static void header(const char* _prefix, const char* _msg);
-		static void message(const char* _prefix, const char* _msg);
-		static void error(const char* _prefix, const char* _msg);
-		static void error(const char* _prefix, int _code, const char* _msg);
-		static void trace(const char* _prefix, Event& _event);
+		static void Header(const char* prefix, const char* msg);
+		static void Message(const char* prefix, const char* msg);
+		static void Error(const char* prefix, const char* msg);
+		static void Error(const char* prefix, int code, const char* msg);
+		static void Trace(const char* prefix, Event& event);
+		static void UnhandledTrace(const char* prefix, Event& event);
 
 	private:
-		static std::string datetime();
+		static std::string DateTime();
 
 		static bool initalized;
 		static bool debug;
 		static const char* file_path;
 	};
 
-	namespace console_color {
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& reset(std::basic_ostream<CharT, Traits>& os) {
+	namespace CONSOLE_COLOR {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& RESET(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[0m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_black(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BLACK(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[30m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_red(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_RED(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[31m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_green(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_GREEN(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[32m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_yellow(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_YELLOW(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[33m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_blue(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BLUE(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[34m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_magenta(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_MAGENTA(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[35m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_cyan(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_CYAN(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[36m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_white(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_WHITE(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[37m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_black(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_BLACK(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[30m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_red(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_RED(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[31m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_green(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_GREEN(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[32m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_yellow(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_YELLOW(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[33m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_blue(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_BLUE(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[34m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_magenta(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_MAGENTA(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[35m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_cyan(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_CYAN(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[36m";
 		};
-		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& forground_bold_white(std::basic_ostream<CharT, Traits>& os) {
+		template<class CharT, class Traits> constexpr std::basic_ostream<CharT, Traits>& FORGROUND_BOLD_WHITE(std::basic_ostream<CharT, Traits>& os) {
 			return os << "\033[1m\033[37m";
 		};
 	}

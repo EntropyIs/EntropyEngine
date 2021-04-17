@@ -3,11 +3,11 @@
 
 using namespace Entropy;
 
-bool log::initalized;
-bool log::debug;
-const char* log::file_path;
+bool LOG::initalized;
+bool LOG::debug;
+const char* LOG::file_path;
 
-bool log::init(const bool _debug)
+bool LOG::Init(const bool _debug)
 {
 	file_path = "logfile.log";
 	initalized = false;
@@ -15,7 +15,7 @@ bool log::init(const bool _debug)
 	logger.open(file_path, std::ofstream::out);
 	if (logger.is_open())
 	{
-		logger << "Logfile Generated: " << datetime() << std::endl;
+		logger << "Logfile Generated: " << DateTime() << std::endl;
 		initalized = true;
 	}
 	logger.close();
@@ -23,12 +23,12 @@ bool log::init(const bool _debug)
 	debug = _debug;
 
 	if (debug)
-		std::cout << console_color::forground_cyan << "Logfile Generated: " << datetime() << console_color::reset << std::endl;
+		std::cout << CONSOLE_COLOR::FORGROUND_CYAN << "Logfile Generated: " << DateTime() << CONSOLE_COLOR::RESET << std::endl;
 
 	return initalized;
 }
 
-bool log::shutdown()
+bool LOG::Shutdown()
 {
 	if (initalized)
 	{
@@ -36,18 +36,18 @@ bool log::shutdown()
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << "Logfile Closed: " << datetime() << std::endl;
+			logger << "Logfile Closed: " << DateTime() << std::endl;
 			initalized = false;
 		}
 		logger.close();
 
 		if (debug)
-			std::cout << console_color::forground_cyan << "Logfile Closed: " << datetime() << console_color::reset << std::endl;
+			std::cout << CONSOLE_COLOR::FORGROUND_CYAN << "Logfile Closed: " << DateTime() << CONSOLE_COLOR::RESET << std::endl;
 	}
 	return !initalized;
 }
 
-void log::header(const char* _prefix, const char* _msg)
+void LOG::Header(const char* _prefix, const char* _msg)
 {
 	if (initalized)
 	{
@@ -55,16 +55,16 @@ void log::header(const char* _prefix, const char* _msg)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << "#" << datetime() << ": " << _msg << "#" << std::endl;
+			logger << "#" << DateTime() << ": " << _msg << "#" << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cout << console_color::forground_bold_green << datetime() << " " << _prefix << ": " << _msg << console_color::reset << std::endl;
+			std::cout << CONSOLE_COLOR::FORGROUND_BOLD_GREEN << DateTime() << " " << _prefix << ": " << _msg << CONSOLE_COLOR::RESET << std::endl;
 	}
 }
 
-void log::message(const char* _prefix, const char* _msg)
+void LOG::Message(const char* _prefix, const char* _msg)
 {
 	if (initalized)
 	{
@@ -72,16 +72,16 @@ void log::message(const char* _prefix, const char* _msg)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << ": " << _msg << std::endl;
+			logger << DateTime() << ": " << _msg << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cout << console_color::forground_green << datetime() << " " << _prefix << ": " << console_color::reset << ": " << _msg << console_color::reset << std::endl;
+			std::cout << CONSOLE_COLOR::FORGROUND_GREEN << DateTime() << " " << _prefix << ": " << CONSOLE_COLOR::RESET << ": " << _msg << CONSOLE_COLOR::RESET << std::endl;
 	}
 }
 
-void Entropy::log::error(const char* _prefix, const char* _msg)
+void Entropy::LOG::Error(const char* _prefix, const char* _msg)
 {
 	if (initalized)
 	{
@@ -89,16 +89,16 @@ void Entropy::log::error(const char* _prefix, const char* _msg)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << " " << _prefix << " Error: "<< _msg << std::endl;
+			logger << DateTime() << " " << _prefix << " Error: "<< _msg << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cerr << console_color::forground_red << datetime() << _prefix << " Error: " << _msg << console_color::reset << std::endl;
+			std::cerr << CONSOLE_COLOR::FORGROUND_RED << DateTime() << _prefix << " Error: " << _msg << CONSOLE_COLOR::RESET << std::endl;
 	}
 }
 
-void Entropy::log::error(const char* _prefix, int _code, const char* _msg)
+void Entropy::LOG::Error(const char* _prefix, int _code, const char* _msg)
 {
 	if (initalized)
 	{
@@ -106,16 +106,16 @@ void Entropy::log::error(const char* _prefix, int _code, const char* _msg)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << " " << _prefix << " Error: " << _code << ", " << _msg << std::endl;
+			logger << DateTime() << " " << _prefix << " Error: " << _code << ", " << _msg << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cerr << console_color::forground_red << datetime() << _prefix << " Error: " << _code << ", " << _msg << console_color::reset << std::endl;
+			std::cerr << CONSOLE_COLOR::FORGROUND_RED << DateTime() << _prefix << " Error: " << _code << ", " << _msg << CONSOLE_COLOR::RESET << std::endl;
 	}
 }
 
-void Entropy::log::trace(const char* _prefix, Entropy::Event& _event)
+void Entropy::LOG::Trace(const char* _prefix, Entropy::Event& _event)
 {
 	if (initalized)
 	{
@@ -123,16 +123,33 @@ void Entropy::log::trace(const char* _prefix, Entropy::Event& _event)
 		logger.open(file_path, std::ofstream::app);
 		if (logger.is_open())
 		{
-			logger << datetime() << " " << _prefix << ": " << _event.toString() << std::endl;
+			logger << DateTime() << " " << _prefix << ": " << _event.toString() << std::endl;
 		}
 		logger.close();
 
 		if (debug)
-			std::cout << console_color::forground_white << datetime() << " " << _prefix << ": " << _event.toString() << console_color::reset << std::endl;
+			std::cout << CONSOLE_COLOR::FORGROUND_WHITE << DateTime() << " " << _prefix << ": " << _event.toString() << CONSOLE_COLOR::RESET << std::endl;
 	}
 }
 
-std::string log::datetime()
+void Entropy::LOG::UnhandledTrace(const char* _prefix, Event& _event)
+{
+	if (initalized)
+	{
+		std::ofstream logger;
+		logger.open(file_path, std::ofstream::app);
+		if (logger.is_open())
+		{
+			logger << DateTime() << " " << _prefix << ": " << _event.toString() << std::endl;
+		}
+		logger.close();
+
+		if (debug)
+			std::cout << CONSOLE_COLOR::FORGROUND_CYAN << DateTime() << " " << _prefix << ": Unhandled Event - " << _event.toString() << CONSOLE_COLOR::RESET << std::endl;
+	}
+}
+
+std::string LOG::DateTime()
 {
 	//Generate DateTime Stamp
 	auto now = std::chrono::system_clock::now();
