@@ -9,8 +9,6 @@
 
 Entropy::Application::Application()
 {
-	_window = std::unique_ptr<Entropy::Window>(Entropy::Window::Create());
-	_window->SetEventCallback(BIND_EVENT_FUNCTION(Application::OnEvent));
 }
 
 Entropy::Application::~Application()
@@ -21,6 +19,9 @@ void Entropy::Application::Init(bool _debug)
 {
 	Entropy::log::init(_debug);
 	Entropy::log::header("APP", "Entropy Engine: Default Initalization.");
+
+	_window = std::unique_ptr<Entropy::Window>(Entropy::Window::Create());
+	_window->SetEventCallback(BIND_EVENT_FUNCTION(Application::OnEvent));
 
 	_running = true;
 }

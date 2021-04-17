@@ -38,17 +38,17 @@ void Entropy::WinWindow::OnUpdate()
 
 inline unsigned int Entropy::WinWindow::GetWidth() const
 {
-    return data.Width;
+    return _data.Width;
 }
 
 unsigned int Entropy::WinWindow::GetHeight() const
 {
-    return data.Height;
+    return _data.Height;
 }
 
 void Entropy::WinWindow::SetEventCallback(const EventCallbackFn& callback)
 {
-    data.EventCallback = callback;
+    _data.EventCallback = callback;
 }
 
 void Entropy::WinWindow::SetVSync(bool enabled)
@@ -57,23 +57,22 @@ void Entropy::WinWindow::SetVSync(bool enabled)
         glfwSwapInterval(1);
     else
         glfwSwapInterval(0);
-    data.VSync = enabled;
+    _data.VSync = enabled;
 }
 
 bool Entropy::WinWindow::IsVSync() const
 {
-    return data.VSync;
+    return _data.VSync;
 }
 
 void Entropy::WinWindow::Init(const WindowProps& props)
 {
-    Entropy::log::message("WINDOW", std::string("Createing window " + props.Title + " (" + std::to_string(props.Width) + "," + std::to_string(props.Height) + ")").c_str());
+    _data.Title = props.Title;
+    _data.Width = props.Width;
+    _data.Height = props.Height;
 
-    data.Title = props.Title;
-    data.Width = props.Width;
-    data.Height = props.Height;
-
-    //Initalize GLFW`
+    //Initalize GLFW
+    Entropy::log::message("WINDOW", "Inializing GLFW!");
     if (!GLFWInitalized)
     {
         if (!glfwInit())
@@ -83,17 +82,24 @@ void Entropy::WinWindow::Init(const WindowProps& props)
     }
 
     //Create Window
+    Entropy::log::message("WINDOW", std::string("Createing Window: " + props.Title + " (" + std::to_string(props.Width) + "," + std::to_string(props.Height) + ")").c_str());
     window = glfwCreateWindow((int)props.Width, (int)props.Height, props.Title.c_str(), nullptr, nullptr);
     if (window == NULL)
         Entropy::log::error("WINDOW", "Failed to create GLFW Window");
     glfwMakeContextCurrent(window);
 
+    // Inialize GLAD
+    Entropy::log::message("WINDOW", "Inializing GLAD!");
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         Entropy::log::error("WINDOW", "Failed to initalize GLAD!");
-    glfwSetWindowUserPointer(window, &data);
+
+    // Set Window Data Pointer
+    Entropy::log::message("WINDOW", "Set Window Data Pointer!");
+    glfwSetWindowUserPointer(window, &_data);
     SetVSync(true);
 
     // Set GLFW Callbacks
+    Entropy::log::message("WINDOW", "Set Window Resize Callback!");
     glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -104,6 +110,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
             data.EventCallback(event);
         });
 
+    Entropy::log::message("WINDOW", "Set Window Close Callback!");
     glfwSetWindowCloseCallback(window, [](GLFWwindow* window)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -112,6 +119,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
             data.EventCallback(event);
         });
 
+    Entropy::log::message("WINDOW", "Set Window Key Callback!");
     glfwSetKeyCallback(window, [](GLFWwindow* window, int key, int scancode, int action, int mods)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -139,6 +147,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
             }
         });
 
+    Entropy::log::message("WINDOW", "Set Window Mouse Button Callback!");
     glfwSetMouseButtonCallback(window, [](GLFWwindow* window, int button, int action, int mods)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -160,6 +169,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
             }
         });
 
+    Entropy::log::message("WINDOW", "Set Window Scroll Callback!");
     glfwSetScrollCallback(window, [](GLFWwindow* window, double xOffset, double yOffset)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
@@ -168,6 +178,7 @@ void Entropy::WinWindow::Init(const WindowProps& props)
             data.EventCallback(event);
         });
 
+    Entropy::log::message("WINDOW", "Set Window Cursor Position Callback!");
     glfwSetCursorPosCallback(window, [](GLFWwindow * window, double xPos, double yPos)
         {
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);

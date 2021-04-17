@@ -97,11 +97,16 @@ project "Sandbox"
 	includedirs
 	{
 		"src/EntropyLib",
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}"
 	}
 
 	links
 	{
 		"EntropyLib",
+		"GLFW",
+		"GLAD",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

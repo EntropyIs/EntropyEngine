@@ -34,6 +34,6 @@ namespace Entropy
 			EventCallbackFn EventCallback;
 		};
 
-		WindowData data;
+		WindowData _data;
 	};
 }

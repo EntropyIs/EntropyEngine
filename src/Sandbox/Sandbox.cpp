@@ -1,6 +1,8 @@
 #include <EntropyCore.h>
 #include <Entropy/Events/ApplicationEvents.h>
 
+#include <GLFW/glfw3.h>
+
 #include <exception>
 
 class ExampleLayer : public Entropy::Layer
@@ -10,7 +12,9 @@ public:
 
 	void OnUpdate() override
 	{
-		Entropy::log::message("EXAMPLE_LAYER","Update");
+		// Clear Layer
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 	}
 
 	void OnEvent(Entropy::Event& e) override
