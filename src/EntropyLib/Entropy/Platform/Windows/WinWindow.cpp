@@ -70,9 +70,9 @@ void Entropy::WinWindow::Init(const WindowProps& props)
     _data.Height = props.Height;
 
     //Initalize GLFW
-    Entropy::LOG::Message("WINDOW", "Inializing GLFW!");
     if (!GLFWInitalized)
     {
+        Entropy::LOG::Message("WINDOW", "Inializing GLFW!");
         if (!glfwInit())
             Entropy::LOG::Error("WINDOW", "Could not initalize GLFW!");
         glfwSetErrorCallback(GLFWErrorCallback);

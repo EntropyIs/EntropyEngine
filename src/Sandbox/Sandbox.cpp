@@ -1,20 +1,33 @@
 #include <EntropyCore.h>
 #include <Entropy/Events/ApplicationEvents.h>
+#include <Entropy/Platform/OpenGl/GL_Shader.h>
+#include <Entropy/Platform/OpenGL/TestRenderer.h>
 
-#include <GLFW/glfw3.h>
-
-#include <exception>
+#include "EPCH.h"
 
 class ExampleLayer : public Entropy::Layer
 {
 public:
-	ExampleLayer() : Layer("EXAMPLE_LAYER") {}
+	ExampleLayer() : Layer("EXAMPLE_LAYER")
+	{
+		shader = Entropy::Graphics::GL_Shader("Assets/vTestShader.glsl", "Assets/fTestShader.glsl");
+		shader.Use();
+
+		float vertices[] = {
+			-0.5f,  0.5f,
+			 0.5f, -0.5f,
+			 0.0f,  0.5f
+		};
+		//renderer = Entropy::Graphics::TestRenderer(vertices, 3, "shader");
+	}
 
 	void OnUpdate() override
 	{
 		// Clear Layer
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
+
+		//renderer.OnRender();
 	}
 
 	void OnEvent(Entropy::Event& e) override
@@ -22,6 +35,10 @@ public:
 		// TODO: Handle Layer Events, and Pass to Game Elements as applicable
 		Entropy::LOG::Trace("EXAMPLE_LAYER", e);
 	}
+
+private:
+	Entropy::Graphics::TestRenderer renderer;
+	Entropy::Graphics::GL_Shader shader;
 };
 
 class Sandbox : public Entropy::Application

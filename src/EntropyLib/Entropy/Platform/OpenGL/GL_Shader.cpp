@@ -3,9 +3,6 @@
 
 #include "Entropy/Tools/Log.h"
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
 Entropy::Graphics::GL_Shader::GL_Shader(const char* vertexShaderPath, const char* fragmentShaderPath, const char* geometaryShaderPath)
 {
 	// Compile Shaders
@@ -53,6 +50,7 @@ Entropy::Graphics::GL_Shader::GL_Shader(const char* vertexShaderPath, const char
 
 void Entropy::Graphics::GL_Shader::Use() const
 {
+	glUseProgram(_ID);
 }
 
 unsigned int Entropy::Graphics::GL_Shader::Compile(const char* path, unsigned int type)
