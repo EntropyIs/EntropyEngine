@@ -1,4 +1,4 @@
-#include "ecpch.h"
+#include "EPCH.h"
 #include "Log.h"
 
 using namespace Entropy;

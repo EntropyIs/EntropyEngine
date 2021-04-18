@@ -1,11 +1,9 @@
-#include "ecpch.h"
+#include "EPCH.h"
 #include "Application.h"
 
 #include "Tools/Log.h"
 
 #include "Events/Event.h"
-
-#define BIND_EVENT_FUNCTION(x) std::bind(&x, this, std::placeholders::_1)
 
 Entropy::Application::Application() : _running(false) {}
 

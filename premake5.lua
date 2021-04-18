@@ -25,8 +25,8 @@ project "EntropyLib"
 	targetdir("bin/" .. outputDir .. "/%{prj.name}")
 	objdir("obj/" .. outputDir .. "/%{prj.name}")
 
-	pchheader "ecpch.h"
-	pchsource "src/EntropyLib/ecpch.cpp"
+	pchheader "EPCH.h"
+	pchsource "src/EntropyLib/EPCH.cpp"
 
 	files
 	{

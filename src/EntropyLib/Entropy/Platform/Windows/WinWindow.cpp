@@ -1,12 +1,10 @@
-#include "ecpch.h"
+#include "EPCH.h"
 #include "WinWindow.h"
 
 #include "Entropy/Tools/Log.h"
 #include "Entropy/Events/ApplicationEvents.h"
 #include "Entropy/Events/KeyEvent.h"
 #include "Entropy/Events/MouseEvent.h"
-
-#include <glad/glad.h>
 
 static bool GLFWInitalized = false;
 

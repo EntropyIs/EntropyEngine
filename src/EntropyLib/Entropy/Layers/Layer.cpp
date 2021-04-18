@@ -1,4 +1,4 @@
-#include "ecpch.h"
+#include "EPCH.h"
 #include "Layer.h"
 
 Entropy::Layer::Layer(const std::string& name) : _name(name)

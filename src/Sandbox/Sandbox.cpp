@@ -27,14 +27,17 @@ public:
 class Sandbox : public Entropy::Application
 {
 public:
-	Sandbox()
+	virtual void Init(bool debug = false) override
 	{
+		Entropy::LOG::Init(debug);
+		Entropy::LOG::Header("APP", "Entropy Engine: Default Initalization.");
+
+		_window = std::unique_ptr<Entropy::Window>(Entropy::Window::Create(Entropy::WindowProps("Sandbox")));
+		_window->SetEventCallback(BIND_EVENT_FUNCTION(Entropy::Application::OnEvent));
+
+		_running = true;
+
 		PushLayer(new ExampleLayer());
-	}
-
-	~Sandbox()
-	{
-
 	}
 };
 

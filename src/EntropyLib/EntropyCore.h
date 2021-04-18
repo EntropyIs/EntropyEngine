@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Entropy/Tools/API.h"
 #include "Entropy/Tools/log.h"
 
 #include "Entropy/Application.h"
