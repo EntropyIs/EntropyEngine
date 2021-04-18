@@ -18,16 +18,13 @@ public:
 			 0.5f, -0.5f,
 			 0.0f,  0.5f
 		};
-		//renderer = Entropy::Graphics::TestRenderer(vertices, 3, "shader");
+		renderer = Entropy::Graphics::TestRenderer(vertices, 3, "shader");
 	}
 
 	void OnUpdate() override
 	{
 		// Clear Layer
-		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		//renderer.OnRender();
+		renderer.OnRender();
 	}
 
 	void OnEvent(Entropy::Event& e) override
